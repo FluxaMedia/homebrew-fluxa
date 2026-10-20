@@ -18,9 +18,9 @@ cask "fluxa" do
 
   app "Fluxa.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Fluxa.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Fluxa.app"]
   end
 
   zap trash: "~/Library/Application Support/com.fluxa.desktop"
