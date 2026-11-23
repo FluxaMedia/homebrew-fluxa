@@ -1,6 +1,6 @@
 cask "fluxa" do
-  version "0.3.11"
-  sha256 "d9c8517073dc1cb3d3de55e7cee06aed024a803395169f4a36e02b2be2330648"
+  version "0.3.12"
+  sha256 "43603bf43c99f0394af3243e6710ccb1dc10bb0720ef3406bccff7b1824d372b"
 
   url "https://github.com/FluxaMedia/fluxa/releases/download/v#{version}/fluxa-#{version}-macos-arm64.dmg"
   name "Fluxa"
